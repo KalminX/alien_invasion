@@ -1,16 +1,17 @@
 import sys
 import pygame
 
+from settings import Settings
+
 
 def run_game():
-    # initialize screen and game play
+    # initialize pygame, settings and screen object
     pygame.init()
+    ai_settings = Settings()
+    screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
     screen = pygame.display.set_mode((600, 400))
     pygame.display.set_caption("Kalmin's Alien Invasion")
  
-    # Set the background color
-    bg_color = (230, 230, 230)
-
 	# main game loop
     while True:
 		# loop through each event
@@ -19,7 +20,7 @@ def run_game():
                 sys.exit()
                 
         # redraw the screen during each pass through the loop
-        screen.fill(bg_color)
+        screen.fill(ai_settings.bg_color)
         # update the screen
         pygame.display.flip()
 
