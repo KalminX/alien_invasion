@@ -2,7 +2,7 @@
 
 Welcome to Alien Invasion! This is a simple arcade-style game where you defend Earth from invading aliens. 
 
-![Gameplay Screenshot](alien_screenshot_pic.png)
+![Gameplay Screenshot](alien_invasion_pic.png)
 
 ## Installation
 
